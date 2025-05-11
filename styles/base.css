@@ -1,0 +1,189 @@
+/* Web Page CSS Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  /* Header (container) */
+  header {
+    background-color: #003366;
+    grid-area: header;
+  }
+  
+  /* Header text */
+  .header-content {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+.highlight-name {
+    color: orangered;
+    font-weight: bold;
+  }
+
+
+  /* Navigation inside header */
+  nav {
+    background-color: black;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: orangered;
+  }
+  
+  /* Main and Aside using CSS Grid */
+  main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-area: main;
+    font-size: 1em;
+    background-color: #003366;
+  }
+  
+  /* Main Content */
+  .card {
+    background-color: white;
+    
+    color: black;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 15px;
+  }
+  
+.section-title {
+    
+    background-color: #003366;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: -20px -20px 20px -20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+  }
+
+.card-content-one {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.card-content-one img {
+  max-width: 200px;
+  height: auto;  
+}
+
+.city-country {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.divider {
+  border: none;
+  height: 2px; 
+  width: 600px;
+  background-color: orangered;
+  margin: 10px 0;
+}
+
+.card-content-two {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+
+.card-content-two img {
+  order: -1;
+  max-width: 200px;
+  height: auto;  
+  padding-top: 10px;
+  display: block;
+} 
+
+.card-content-two p {
+  max-width: 400px;
+  text-align: justify;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 80px;
+  margin: 0;
+  font-size: 0.9em;
+  flex: 1;
+}
+
+.flag {
+  order: -1;
+  margin: 0;
+  width: fit-content;  
+}
+
+.flag figcaption {
+  background-color: black;
+  color: white;
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.resource-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+
+
+  
+  /* Footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    grid-area: footer;
+  }
+  
