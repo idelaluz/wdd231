@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const topContainer = document.querySelector(".top-buttons");
     const courseContainer = document.querySelector(".course-buttons");
   
-    // Clear existing buttons to prevent duplication
-    topContainer.innerHTML = '';
-    courseContainer.innerHTML = '';
+    // Clear existing buttons
+    topContainer.innerHTML = "";
+    courseContainer.innerHTML = "";
   
     topButtons.forEach(label => {
       const btn = document.createElement("button");
@@ -21,4 +21,4 @@ document.addEventListener("DOMContentLoaded", function() {
       courseContainer.appendChild(btn);
     });
   });
-  
+    
