@@ -202,21 +202,21 @@ button:hover {
 }
 
 /* Container for the top three buttons */
-.top-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
+.top-buttons button,
+.course-buttons button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Container for the six course buttons */
-.course-buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  align-items: center;
-  justify-items: center;
+.top-buttons button:hover,
+.course-buttons button:hover {
+  background-color: orangered;
 }
 
 
