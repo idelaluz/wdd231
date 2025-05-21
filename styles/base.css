@@ -87,6 +87,11 @@
     margin: 15px;
   }
   
+  .full-width {
+    grid-column: 1 / -1; /* Span from the first to the last column */
+  }
+  
+
 .section-title {
     
     background-color: #003366;
