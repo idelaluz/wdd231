@@ -26,8 +26,9 @@
   /* Header text */
   .header-content {
     display: flex;
-    align-items: center; /* Vertically center items */
-    gap: 20px; /* Space between image and heading */
+    align-items: center; 
+    justify-content: center;
+    gap: 30px; /* Space between image and heading */
     color: white;
     padding: 20px;
     text-align: left;
