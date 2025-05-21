@@ -202,6 +202,17 @@ button:hover {
 }
 
 /* Container for the top three buttons */
+.top-buttons,
+.course-buttons {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  flex-wrap: wrap;         /* Allows buttons to wrap to the next line if necessary */
+  gap: 10px;               /* Adds space between buttons */
+  margin: 20px 0;          /* Adds vertical spacing */
+}
+
+
+
 .top-buttons button,
 .course-buttons button {
   padding: 10px 20px;
