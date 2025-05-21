@@ -206,11 +206,19 @@ button:hover {
 .course-buttons {
   display: flex;
   justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically */
   flex-wrap: wrap;         /* Allows buttons to wrap to the next line if necessary */
   gap: 10px;               /* Adds space between buttons */
   margin: 20px 0;          /* Adds vertical spacing */
 }
 
+.course-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* Creates three columns */
+  justify-content: center;                /* Centers the grid horizontally */
+  gap: 10px;                              /* Adds space between buttons */
+  margin: 20px 0;                         /* Adds vertical spacing */
+}
 
 
 .top-buttons button,
