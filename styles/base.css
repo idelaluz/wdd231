@@ -25,11 +25,14 @@
   
   /* Header text */
   .header-content {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between image and heading */
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 0.8em;
-  }
+  }  
   
 .highlight-name {
     color: orangered;
