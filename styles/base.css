@@ -279,9 +279,6 @@ button:hover {
 /* === MOBILE LAYOUT: up to 768px wide === */
 @media (max-width: 768px) {
   /* 0. GLOBAL SETTINGS */
-* {
-  outline: 1px solid red; /* REMOVE after debugging */
-  }
 
   html, body {
     margin: 0;
