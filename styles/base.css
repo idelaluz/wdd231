@@ -158,13 +158,23 @@
 }
 
 .flag {
-  order: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flag img {
+  display: block; /* Removes bottom whitespace from inline images */
+  max-width: 100%;
+  height: auto;
   margin: 0;
-  width: fit-content;  
 }
 
 .flag figcaption {
   background-color: black;
+  width: 200px;
   color: white;
   font-size: 0.9em;
   font-style: italic;
@@ -203,7 +213,7 @@ button:hover {
   align-items: center;     /* Centers items vertically */
   flex-wrap: wrap;         /* Allows buttons to wrap to the next line if necessary */
   gap: 10px;               /* Adds space between buttons */
-  margin: 20px 0;          /* Adds vertical spacing */
+  /*margin: 0px 0;          /* Adds vertical spacing */
 }
 
 .course-buttons {
@@ -211,12 +221,27 @@ button:hover {
   grid-template-columns: repeat(3, auto); /* Creates three columns */
   justify-content: center;                /* Centers the grid horizontally */
   gap: 10px;                              /* Adds space between buttons */
-  margin: 20px 0;                         /* Adds vertical spacing */
+  /*margin: 0px 0;                         /* Adds vertical spacing */
 }
 
 
-.top-buttons button,
+.top-buttons button {
+  min-width: 150px; 
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
 .course-buttons button {
+  min-width: 300px; 
+  text-align: center;
   padding: 10px 20px;
   font-size: 1em;
   border: none;
@@ -242,4 +267,6 @@ button:hover {
     padding: 20px;
     grid-area: footer;
   }
+  
+
   
