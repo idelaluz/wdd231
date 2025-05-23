@@ -108,12 +108,10 @@
 
 .card-content-one {
   display: flex;
-  align-items: flex-start;
-  gap: 60px;
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 50px;
-  padding-bottom: 10px;
+  flex-direction: column;  /* Stack elements vertically */
+  align-items: center;     /* Center items horizontally */
+  gap: 20px;
+  padding: 10px;
   font-size: 0.9em;
 }
 
@@ -131,10 +129,10 @@
 
 .divider {
   border: none;
-  height: 2px; 
-  width: 600px;
+  height: 2px;
   background-color: orangered;
-  margin: 10px 0;
+  width: calc(100% - 60px); /* Leaves 30px on both sides */
+  margin: 20px auto;
 }
 
 .card-content-two {
@@ -153,15 +151,10 @@
   display: block;
 } 
 
-.card-content-two p {
-  max-width: 400px;
-  text-align: justify;
-  padding-top: 10px;
-  padding-left: 0px;
-  padding-right: 80px;
-  margin: 0;
-  font-size: 0.9em;
-  flex: 1;
+.card-content-two {
+  display: flex;
+  justify-content: center;     /* Center child elements horizontally */
+  padding: 20px 0;             /* Remove left/right push */
 }
 
 .flag {
@@ -238,7 +231,6 @@ button:hover {
 .course-buttons button:hover {
   background-color: orangered;
 }
-
 
 
   
