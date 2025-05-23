@@ -252,6 +252,12 @@ button:hover {
   transition: background-color 0.3s;
 }
 
+.course-buttons button.selected {
+  background-color: #ddd;
+  color: black;
+}
+
+
 .top-buttons button:hover,
 .course-buttons button:hover {
   background-color: orangered;
