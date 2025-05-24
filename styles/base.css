@@ -32,7 +32,7 @@
     align-items: center; 
     justify-content: center;
     gap: 30px; /* Space between image and heading */
-    color: white;
+    color: #f5f5f5;
     padding: 20px;
     text-align: left;
     font-size: 0.8em;
@@ -60,7 +60,7 @@
   }
   
   nav a {
-    color: white;
+    color: #f5f5f5;
     text-decoration: none;
     padding: 15px 0;
     display: inline-block;
@@ -80,9 +80,17 @@
     background-color: #003366;
   }
   
+  .wayfinder {
+    font-size: 0.9em;
+    padding: 0px 0px;
+    color: #f5f5f5;
+    background-color: #002244;
+    font-style: italic;
+  }
+
   /* Main Content */
   .card {
-    background-color: white;
+    background-color:#f5f5f5;
     
     color: black;
     padding: 20px;
@@ -105,7 +113,7 @@
     margin: -20px -20px 20px -20px;
     font-size: 1.2em;
     text-align: center;
-    color: white;
+    color: #f5f5f5;
   }
 
 .card-content-one {
@@ -177,7 +185,7 @@
 .flag figcaption {
   background-color: black;
   width: 200px;
-  color: white;
+  color: #f5f5f5;
   font-size: 0.9em;
   font-style: italic;
   padding: 5px;
@@ -193,7 +201,7 @@
 /* Style for all buttons */
 button {
   background-color: #003366;
-  color: white;
+  color: #f5f5f5;
   border: none;
   padding: 10px 20px;
   margin: 5px;
@@ -235,7 +243,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   background-color: #003366;
-  color: white;
+  color: #f5f5f5;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -249,7 +257,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   background-color: #003366;
-  color: white;
+  color: #f5f5f5;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -277,7 +285,7 @@ button:hover {
   /* Footer */
   footer {
     background-color: black;
-    color: white;
+    color: #f5f5f5;
     text-align: center;
     padding: 20px;
     grid-area: footer;
@@ -318,13 +326,13 @@ button:hover {
     margin: 0 5px;
     flex-grow: 1;
     text-align: center;
-    white-space: nowrap;
+    #f5f5f5-space: nowrap;
   }
 
   .hamburger {
     display: block;
     font-size: 1.2em;
-    color: white;
+    color: #f5f5f5;
     cursor: pointer;
     flex-shrink: 0;
   }
@@ -439,7 +447,7 @@ button:hover {
     max-width: 220px;
     margin: 0;
     background-color: black;
-    color: white;
+    color: #f5f5f5;
     font-size: 0.85em;
     font-style: italic;
     padding: 5px;
