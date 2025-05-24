@@ -265,6 +265,13 @@ button:hover {
   background-color: orangered;
 }
 
+.credit-counter {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0;
+  font-size: 1em;
+}
 
   
   /* Footer */
@@ -284,7 +291,7 @@ button:hover {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   *, *::before, *::after {
